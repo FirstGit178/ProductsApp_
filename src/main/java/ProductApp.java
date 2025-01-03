@@ -15,5 +15,18 @@ public class ProductApp {
 
         //second product
         Product p2 = new Product("screwdriver", "Philips head");
+
+        getDetails();
+    }
+        public static String[] getDetails()
+        {
+        Scanner sc = new Scanner(System.in);
+        //prompting for details for products
+        String[] details = new String[2];
+        System.out.println("Please enter a product name");
+        String productName = sc.nextLine();
+        System.out.println("Please enter the description of the product");
+        String description = sc.nextLine();
+        return details;
     }
 }
